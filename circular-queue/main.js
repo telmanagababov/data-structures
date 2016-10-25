@@ -15,6 +15,16 @@ function onDequeue() {
     update();
 }
 
+function onForward() {
+    queue.forward();
+    update();
+}
+
+function onBackward() {
+    queue.backward();
+    update();
+}
+
 function onClear() {
     queue.clear();
     update();
@@ -43,5 +53,7 @@ window.onload = () => {
     itemsContainer = document.querySelector("#items-container");
     document.querySelector("#control-enqueue").onclick = onEnqueue;
     document.querySelector("#control-dequeue").onclick = onDequeue;
+    document.querySelector("#control-backward").onclick = onBackward;
+    document.querySelector("#control-forward").onclick = onForward;
     document.querySelector("#control-clear").onclick = onClear;
 };
