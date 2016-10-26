@@ -1,6 +1,6 @@
 const MAX_VALUE = 100;
 
-let list = new LinkedList();
+let list = new CircularLinkedList();
 let sizeInfo = null,
     emptyInfo = null,
     headInfo = null,

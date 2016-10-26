@@ -1,4 +1,4 @@
-let queue = new CircularQueue();
+let queue = new Queue();
 let sizeInfo = null,
     emptyInfo = null,
     frontInfo = null,
