@@ -3,7 +3,7 @@ const MAX_VALUE = 100;
 let list = new DoublyLinkedList();
 let sizeInfo = null,
     emptyInfo = null,
-    headInfo = null,
+    tailInfo = null,
     itemsContainer = null;
 
 function onAppend() {
@@ -29,7 +29,7 @@ function onClear() {
 function update() {
     sizeInfo.value = list.getSize();
     emptyInfo.value = list.isEmpty();
-    headInfo.value = list.getHead() ? list.getHead().element : null;
+    tailInfo.value = list.getTail() ? list.getTail().element : null;
     itemsContainer.innerHTML = getItemsInfo();
 }
 
@@ -45,7 +45,7 @@ function getItemsInfo() {
 window.onload = () => {
     sizeInfo = document.querySelector("#info-size");
     emptyInfo = document.querySelector("#info-empty");
-    headInfo = document.querySelector("#info-head");
+    tailInfo = document.querySelector("#info-tail");
     itemsContainer = document.querySelector("#items-container");
     document.querySelector("#control-append").onclick = onAppend;
     document.querySelector("#control-remove").onclick = onRemove;
