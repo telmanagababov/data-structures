@@ -1,5 +1,5 @@
 const MAX_VALUE = 10;
-let set = new Dictionary();
+let set = new HashTable();
 let sizeInfo = null,
     emptyInfo = null,
     statusInfo = null,

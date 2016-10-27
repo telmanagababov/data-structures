@@ -1,4 +1,4 @@
-let queue = new Dictionary();
+let queue = new HashTable();
 let sizeInfo = null,
     emptyInfo = null,
     frontInfo = null,

@@ -1,7 +1,7 @@
 const MAX_VALUE = 100,
     MAX_KEY = 10,
     KEY_TEMPLATE = "key_";
-let dictionary = new Dictionary();
+let dictionary = new HashTable();
 let sizeInfo = null,
     emptyInfo = null,
     statusInfo = null,
