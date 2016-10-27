@@ -1,4 +1,4 @@
-let queue = new Set();
+let queue = new Dictionary();
 let sizeInfo = null,
     emptyInfo = null,
     frontInfo = null,

@@ -1,0 +1,8 @@
+#controls .btn {
+    height: 78px;
+}
+
+#values .value {
+    float: left;
+    padding: 5px;
+}

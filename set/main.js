@@ -1,5 +1,5 @@
 const MAX_VALUE = 10;
-let set = new Set();
+let set = new Dictionary();
 let sizeInfo = null,
     emptyInfo = null,
     statusInfo = null,
