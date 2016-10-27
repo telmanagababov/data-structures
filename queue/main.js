@@ -1,4 +1,4 @@
-let queue = new Queue();
+let queue = new Set();
 let sizeInfo = null,
     emptyInfo = null,
     frontInfo = null,
