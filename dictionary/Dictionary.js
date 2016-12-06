@@ -1,52 +1,52 @@
 function Dictionary() {
 
-    let items = {};
+	let items = {};
 
-    function set(key, value) {
-        items[key] = value;
-    }
-    
-    function remove(key) {
-        let result = false;
-        if(has(key) === true) {
-            delete items[key];
-            result = true;
-        }
-        return result;
-    }
-    
-    function has(key) {
-        return items.hasOwnProperty(key);
-    }
+	function set(key, value) {
+		items[key] = value;
+	}
 
-    function get(key) {
-        return items[key];
-    }
-    
-    function clear() {
-        items = {};
-    }
+	function remove(key) {
+		let result = false;
+		if (has(key) === true) {
+			delete items[key];
+			result = true;
+		}
+		return result;
+	}
 
-    function getSize() {
-        return getValues().length;
-    }
+	function has(key) {
+		return items.hasOwnProperty(key);
+	}
 
-    function getKeys() {
-        return Object.keys(items);
-    }
+	function get(key) {
+		return items[key];
+	}
 
-    function getValues() {
-        return Object.keys(items).map(key => items[key]);
-    }
+	function clear() {
+		items = {};
+	}
 
-    return {
-        set: set,
-        remove: remove,
-        has: has,
-        get: get,
-        clear: clear,
-        getSize: getSize,
-        getKeys: getKeys,
-        getValues: getValues
-    }
+	function getSize() {
+		return getValues().length;
+	}
+
+	function getKeys() {
+		return Object.keys(items);
+	}
+
+	function getValues() {
+		return Object.keys(items).map(key => items[key]);
+	}
+
+	return {
+		set: set,
+		remove: remove,
+		has: has,
+		get: get,
+		clear: clear,
+		getSize: getSize,
+		getKeys: getKeys,
+		getValues: getValues
+	}
 }

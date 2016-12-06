@@ -1,37 +1,37 @@
 function Queue() {
 
-    let data = [];
+	let data = [];
 
-    function enqueue(value) {
-        data.push(value);
-    }
+	function enqueue(value) {
+		data.push(value);
+	}
 
-    function dequeue() {
-        return data.shift();
-    }
+	function dequeue() {
+		return data.shift();
+	}
 
-    function clear() {
-        data = [];
-    }
+	function clear() {
+		data = [];
+	}
 
-    function front() {
-        return data[0];
-    }
+	function front() {
+		return data[0];
+	}
 
-    function isEmpty() {
-        return data.length === 0;
-    }
+	function isEmpty() {
+		return data.length === 0;
+	}
 
-    function getSize() {
-        return data.length;
-    }
+	function getSize() {
+		return data.length;
+	}
 
-    return {
-        enqueue: enqueue,
-        dequeue: dequeue,
-        clear: clear,
-        front: front,
-        isEmpty: isEmpty,
-        getSize: getSize
-    }
+	return {
+		enqueue: enqueue,
+		dequeue: dequeue,
+		clear: clear,
+		front: front,
+		isEmpty: isEmpty,
+		getSize: getSize
+	}
 }
