@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Binary Tree</title>
+</head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+		integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+		integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+		integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+		crossorigin="anonymous"></script>
+<link rel="stylesheet" href="main.css">
+<body>
+	<header>
+		<div class="container">
+			<h3>Binary Tree</h3>
+		</div>
+	</header>
+	
+	<main class="container">
+		
+		<section id="controls" class="col-sm-12">
+			<div class="panel panel-primary">
+				<div class="panel-heading">Controls</div>
+				<div class="panel-body">
+					
+					<div class="col-xs-4">
+						<div class="input-group">
+							<input type="text" class="form-control"
+									id="input-insert" placeholder="Insert">
+							<span class="input-group-btn">
+								<button class="btn btn-default" type="button"
+										id="control-insert">Insert</button>
+							</span>
+						</div>
+					</div>
+					
+					<div class="col-xs-6">
+						<div class="input-group">
+							<input type="text" class="form-control"
+									id="input-search" placeholder="Search">
+							<span class="input-group-btn">
+								<button class="btn btn-default" type="button"
+										id="control-search">Search</button>
+							</span>
+							<input type="text" class="form-control" disabled
+									id="input-search-result" placeholder="Search Result">
+						</div>
+					</div>
+					
+					<div class="col-xs-12">
+						<div class="input-group">
+							<input type="text" class="form-control" disabled
+									id="input-in-order-traverse" placeholder="In order traverse">
+							<span class="input-group-addon">In order traverse</span>
+						</div>
+					</div>
+					
+					<div class="col-xs-12">
+						<div class="input-group">
+							<input type="text" class="form-control" disabled
+									id="input-pre-order-traverse" placeholder="Pre order traverse">
+							<span class="input-group-addon">Pre order traverse</span>
+						</div>
+					</div>
+					
+					<div class="col-xs-12">
+						<div class="input-group">
+							<input type="text" class="form-control" disabled
+									id="input-post-order-traverse" placeholder="Post order traverse">
+							<span class="input-group-addon">Post order traverse</span>
+						</div>
+					</div>
+					
+					<div class="col-xs-3">
+						<div class="input-group">
+							<input type="text" class="form-control" disabled
+									id="input-min" placeholder="Min">
+							<span class="input-group-addon">Min</span>
+						</div>
+					</div>
+					
+					<div class="col-xs-3">
+						<div class="input-group">
+							<input type="text" class="form-control" disabled
+									id="input-max" placeholder="Max">
+							<span class="input-group-addon">Max</span>
+						</div>
+					</div>
+					
+					<div class="col-xs-3">
+						<div class="input-group">
+							<input type="text" class="form-control" disabled
+									id="input-height" placeholder="Height">
+							<span class="input-group-addon">Height</span>
+						</div>
+					</div>
+					
+					<div class="col-xs-3">
+						<div class="input-group">
+							<input type="text" class="form-control"
+									id="input-remove" placeholder="Remove">
+							<span class="input-group-btn">
+								<button class="btn btn-default" type="button"
+										id="control-remove">Remove</button>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section id="tree" class="col-sm-12">
+			<div class="panel panel-primary">
+				<div class="panel-heading">Tree</div>
+				<div id="tree-container" class="panel-body">
+				</div>
+			</div>
+		</section>
+	
+	</main>
+</body>
+<script src="Node.js"></script>
+<script src="BinaryTree.js"></script>
+<script src="main.js"></script>
+</html>
