@@ -1,0 +1,27 @@
+#controls input,
+#controls button {
+	height: 50px;
+}
+#controls .input-group {
+	margin-top: 8px;
+}
+
+#tree .tree {
+	text-align: center;
+}
+#tree .node {
+	width: 40px;
+	height: 40px;
+	border: 2px solid;
+	border-radius: 50%;
+	line-height: 40px;
+	text-align: center;
+	color: #0000ff;
+	display: inline-block;
+}
+#tree .node.red {
+	border-color: #ff0000;
+}
+#tree .node.black {
+	border-color: #000000;
+}
