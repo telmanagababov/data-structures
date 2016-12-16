@@ -1,0 +1,15 @@
+#controls input,
+#controls button {
+	height: 50px;
+}
+#controls .input-group {
+	margin-top: 8px;
+}
+
+#graph-paths-container span {
+	padding: 20px 20px 20px 0;
+}
+#graph-paths-container select {
+	width: 60px;
+	display: inline-block;
+}
